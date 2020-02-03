@@ -10,10 +10,15 @@
 		5ACCC0A423E89E3D009B3B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0A323E89E3D009B3B49 /* AppDelegate.swift */; };
 		5ACCC0A623E89E3D009B3B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0A523E89E3D009B3B49 /* SceneDelegate.swift */; };
 		5ACCC0A823E89E3D009B3B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0A723E89E3D009B3B49 /* ViewController.swift */; };
-		5ACCC0AB23E89E3D009B3B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0A923E89E3D009B3B49 /* Main.storyboard */; };
 		5ACCC0AD23E89E3E009B3B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0AC23E89E3E009B3B49 /* Assets.xcassets */; };
 		5ACCC0B023E89E3E009B3B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0AE23E89E3E009B3B49 /* LaunchScreen.storyboard */; };
 		5ACCC0BB23E89E3F009B3B49 /* CinetopzassoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0BA23E89E3F009B3B49 /* CinetopzassoTests.swift */; };
+		5ACCC0C823E89E8C009B3B49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0C623E89E8C009B3B49 /* LoginViewController.swift */; };
+		5ACCC0C923E89E8C009B3B49 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0C723E89E8C009B3B49 /* LoginViewController.xib */; };
+		5ACCC0CF23E8B37D009B3B49 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0CD23E8B37D009B3B49 /* ForgotPasswordViewController.swift */; };
+		5ACCC0D023E8B37D009B3B49 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0CE23E8B37D009B3B49 /* ForgotPasswordViewController.xib */; };
+		5ACCC0D523E8B39F009B3B49 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */; };
+		5ACCC0D623E8B39F009B3B49 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +36,18 @@
 		5ACCC0A323E89E3D009B3B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ACCC0A523E89E3D009B3B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5ACCC0A723E89E3D009B3B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5ACCC0AA23E89E3D009B3B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5ACCC0AC23E89E3E009B3B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ACCC0AF23E89E3E009B3B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ACCC0B123E89E3E009B3B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ACCC0B623E89E3F009B3B49 /* CinetopzassoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinetopzassoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACCC0BA23E89E3F009B3B49 /* CinetopzassoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinetopzassoTests.swift; sourceTree = "<group>"; };
 		5ACCC0BC23E89E3F009B3B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ACCC0C623E89E8C009B3B49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5ACCC0C723E89E8C009B3B49 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5ACCC0CD23E8B37D009B3B49 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		5ACCC0CE23E8B37D009B3B49 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +89,10 @@
 		5ACCC0A223E89E3D009B3B49 /* Cinetopzasso */ = {
 			isa = PBXGroup;
 			children = (
+				5ACCC0C523E89E7C009B3B49 /* Login */,
 				5ACCC0A323E89E3D009B3B49 /* AppDelegate.swift */,
 				5ACCC0A523E89E3D009B3B49 /* SceneDelegate.swift */,
 				5ACCC0A723E89E3D009B3B49 /* ViewController.swift */,
-				5ACCC0A923E89E3D009B3B49 /* Main.storyboard */,
 				5ACCC0AC23E89E3E009B3B49 /* Assets.xcassets */,
 				5ACCC0AE23E89E3E009B3B49 /* LaunchScreen.storyboard */,
 				5ACCC0B123E89E3E009B3B49 /* Info.plist */,
@@ -97,6 +107,43 @@
 				5ACCC0BC23E89E3F009B3B49 /* Info.plist */,
 			);
 			path = CinetopzassoTests;
+			sourceTree = "<group>";
+		};
+		5ACCC0C523E89E7C009B3B49 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCC0CC23E8B35E009B3B49 /* Login */,
+				5ACCC0CA23E8B32E009B3B49 /* ForgotPassword */,
+				5ACCC0CB23E8B33B009B3B49 /* Register */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5ACCC0CA23E8B32E009B3B49 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCC0CD23E8B37D009B3B49 /* ForgotPasswordViewController.swift */,
+				5ACCC0CE23E8B37D009B3B49 /* ForgotPasswordViewController.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		5ACCC0CB23E8B33B009B3B49 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */,
+				5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		5ACCC0CC23E8B35E009B3B49 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCC0C623E89E8C009B3B49 /* LoginViewController.swift */,
+				5ACCC0C723E89E8C009B3B49 /* LoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +227,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ACCC0D023E8B37D009B3B49 /* ForgotPasswordViewController.xib in Resources */,
+				5ACCC0D623E8B39F009B3B49 /* RegisterViewController.xib in Resources */,
 				5ACCC0B023E89E3E009B3B49 /* LaunchScreen.storyboard in Resources */,
 				5ACCC0AD23E89E3E009B3B49 /* Assets.xcassets in Resources */,
-				5ACCC0AB23E89E3D009B3B49 /* Main.storyboard in Resources */,
+				5ACCC0C923E89E8C009B3B49 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ACCC0C823E89E8C009B3B49 /* LoginViewController.swift in Sources */,
+				5ACCC0CF23E8B37D009B3B49 /* ForgotPasswordViewController.swift in Sources */,
 				5ACCC0A823E89E3D009B3B49 /* ViewController.swift in Sources */,
+				5ACCC0D523E8B39F009B3B49 /* RegisterViewController.swift in Sources */,
 				5ACCC0A423E89E3D009B3B49 /* AppDelegate.swift in Sources */,
 				5ACCC0A623E89E3D009B3B49 /* SceneDelegate.swift in Sources */,
 			);
@@ -225,14 +277,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5ACCC0A923E89E3D009B3B49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5ACCC0AA23E89E3D009B3B49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5ACCC0AE23E89E3E009B3B49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
