@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1F825D23E99C70003B453B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F825B23E99C70003B453B /* HomeViewController.swift */; };
+		5A1F825E23E99C70003B453B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F825C23E99C70003B453B /* HomeViewController.xib */; };
+		5A1F826023E99CB8003B453B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F825F23E99CB8003B453B /* AppCoordinator.swift */; };
+		5A1F826223E99CC5003B453B /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F826123E99CC5003B453B /* BaseCoordinator.swift */; };
+		5A1F826423E99CD1003B453B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F826323E99CD1003B453B /* LoginCoordinator.swift */; };
+		5A352F1323E9EE93001DC066 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1223E9EE93001DC066 /* LoginController.swift */; };
+		5A352F1723E9FA0C001DC066 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1623E9FA0C001DC066 /* User.swift */; };
+		5A352F1923E9FA19001DC066 /* SecurityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1823E9FA19001DC066 /* SecurityService.swift */; };
+		5A352F1B23E9FD4C001DC066 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1A23E9FD4C001DC066 /* HomeCoordinator.swift */; };
+		5A352F1F23E9FF35001DC066 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1D23E9FF35001DC066 /* SplashViewController.swift */; };
+		5A352F2023E9FF35001DC066 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A352F1E23E9FF35001DC066 /* SplashViewController.xib */; };
 		5ACCC0A423E89E3D009B3B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0A323E89E3D009B3B49 /* AppDelegate.swift */; };
-		5ACCC0A623E89E3D009B3B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0A523E89E3D009B3B49 /* SceneDelegate.swift */; };
 		5ACCC0A823E89E3D009B3B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0A723E89E3D009B3B49 /* ViewController.swift */; };
 		5ACCC0AD23E89E3E009B3B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0AC23E89E3E009B3B49 /* Assets.xcassets */; };
 		5ACCC0B023E89E3E009B3B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0AE23E89E3E009B3B49 /* LaunchScreen.storyboard */; };
@@ -32,9 +42,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A1F825B23E99C70003B453B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5A1F825C23E99C70003B453B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5A1F825F23E99CB8003B453B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5A1F826123E99CC5003B453B /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		5A1F826323E99CD1003B453B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		5A352F1223E9EE93001DC066 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5A352F1623E9FA0C001DC066 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5A352F1823E9FA19001DC066 /* SecurityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityService.swift; sourceTree = "<group>"; };
+		5A352F1A23E9FD4C001DC066 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		5A352F1D23E9FF35001DC066 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5A352F1E23E9FF35001DC066 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		5ACCC0A023E89E3D009B3B49 /* Cinetopzasso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinetopzasso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACCC0A323E89E3D009B3B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5ACCC0A523E89E3D009B3B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5ACCC0A723E89E3D009B3B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5ACCC0AC23E89E3E009B3B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ACCC0AF23E89E3E009B3B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +88,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A1F825923E99C4F003B453B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F825B23E99C70003B453B /* HomeViewController.swift */,
+				5A1F825C23E99C70003B453B /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5A1F825A23E99C5A003B453B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F826123E99CC5003B453B /* BaseCoordinator.swift */,
+				5A1F825F23E99CB8003B453B /* AppCoordinator.swift */,
+				5A1F826323E99CD1003B453B /* LoginCoordinator.swift */,
+				5A352F1A23E9FD4C001DC066 /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		5A352F1423E9F9FB001DC066 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5A352F1823E9FA19001DC066 /* SecurityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A352F1523E9FA00001DC066 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A352F1623E9FA0C001DC066 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A352F1C23E9FF1F001DC066 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				5A352F1D23E9FF35001DC066 /* SplashViewController.swift */,
+				5A352F1E23E9FF35001DC066 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		5ACCC09723E89E3D009B3B49 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +154,13 @@
 		5ACCC0A223E89E3D009B3B49 /* Cinetopzasso */ = {
 			isa = PBXGroup;
 			children = (
+				5A1F825A23E99C5A003B453B /* Coordinators */,
+				5A352F1C23E9FF1F001DC066 /* Splash */,
 				5ACCC0C523E89E7C009B3B49 /* Login */,
+				5A1F825923E99C4F003B453B /* Home */,
+				5A352F1423E9F9FB001DC066 /* Services */,
+				5A352F1523E9FA00001DC066 /* Models */,
 				5ACCC0A323E89E3D009B3B49 /* AppDelegate.swift */,
-				5ACCC0A523E89E3D009B3B49 /* SceneDelegate.swift */,
 				5ACCC0A723E89E3D009B3B49 /* ViewController.swift */,
 				5ACCC0AC23E89E3E009B3B49 /* Assets.xcassets */,
 				5ACCC0AE23E89E3E009B3B49 /* LaunchScreen.storyboard */,
@@ -142,6 +211,7 @@
 			children = (
 				5ACCC0C623E89E8C009B3B49 /* LoginViewController.swift */,
 				5ACCC0C723E89E8C009B3B49 /* LoginViewController.xib */,
+				5A352F1223E9EE93001DC066 /* LoginController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -230,8 +300,10 @@
 				5ACCC0D023E8B37D009B3B49 /* ForgotPasswordViewController.xib in Resources */,
 				5ACCC0D623E8B39F009B3B49 /* RegisterViewController.xib in Resources */,
 				5ACCC0B023E89E3E009B3B49 /* LaunchScreen.storyboard in Resources */,
+				5A352F2023E9FF35001DC066 /* SplashViewController.xib in Resources */,
 				5ACCC0AD23E89E3E009B3B49 /* Assets.xcassets in Resources */,
 				5ACCC0C923E89E8C009B3B49 /* LoginViewController.xib in Resources */,
+				5A1F825E23E99C70003B453B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,11 +322,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ACCC0C823E89E8C009B3B49 /* LoginViewController.swift in Sources */,
+				5A1F826223E99CC5003B453B /* BaseCoordinator.swift in Sources */,
+				5A1F826423E99CD1003B453B /* LoginCoordinator.swift in Sources */,
 				5ACCC0CF23E8B37D009B3B49 /* ForgotPasswordViewController.swift in Sources */,
 				5ACCC0A823E89E3D009B3B49 /* ViewController.swift in Sources */,
+				5A352F1F23E9FF35001DC066 /* SplashViewController.swift in Sources */,
 				5ACCC0D523E8B39F009B3B49 /* RegisterViewController.swift in Sources */,
+				5A1F826023E99CB8003B453B /* AppCoordinator.swift in Sources */,
 				5ACCC0A423E89E3D009B3B49 /* AppDelegate.swift in Sources */,
-				5ACCC0A623E89E3D009B3B49 /* SceneDelegate.swift in Sources */,
+				5A352F1B23E9FD4C001DC066 /* HomeCoordinator.swift in Sources */,
+				5A1F825D23E99C70003B453B /* HomeViewController.swift in Sources */,
+				5A352F1923E9FA19001DC066 /* SecurityService.swift in Sources */,
+				5A352F1323E9EE93001DC066 /* LoginController.swift in Sources */,
+				5A352F1723E9FA0C001DC066 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cinetopzasso/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cinetopzasso/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

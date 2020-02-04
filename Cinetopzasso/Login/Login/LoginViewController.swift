@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol LoginScreenDelegate {
+    func userDidLoginWithSuccess()
+}
+
 class LoginViewController: UIViewController {
     @IBOutlet weak var buttonLogin: UIButton!
     @IBOutlet weak var textFieldEmail: UITextField!{
@@ -22,11 +26,27 @@ class LoginViewController: UIViewController {
             textFieldPassword.setIcon(UIImage(named: "password-1")!)
         }
     }
+    
+    static func instantiate(controller: LoginControllerContract?, viewDelegate: LoginScreenDelegate) -> LoginViewController {
+        let vc = LoginViewController(nibName: nil, bundle: nil)
+        vc.controller = controller
+        vc.viewDelegate = viewDelegate
+        
+        return vc
+    }
+    
+    var viewDelegate: LoginScreenDelegate?
+    var controller: LoginControllerContract!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonSetup()
         textFieldSetup()
-        // Do any additional setup after loading the view.
+        
+        controller = controller ?? LoginController(viewController: self, securityService: SecurityService())
+        
+        let touchRecognizer = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
+        self.view.addGestureRecognizer(touchRecognizer)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,16 +78,32 @@ class LoginViewController: UIViewController {
 
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
+    
+    @IBAction func login(_ sender: Any) {
+        guard let email = textFieldEmail.text, !email.isEmpty, let password = textFieldPassword.text, !password.isEmpty else {
+            return
+        }
+        
+        controller.login(email: email, password: password)
+    }
+    
+    @objc func closeKeyboard() {
+        self.view.endEditing(true)
+    }
 }
+
 extension UITextField {
-func setIcon(_ image: UIImage) {
-   let iconView = UIImageView(frame:
-                  CGRect(x: 10, y: 5, width: 20, height: 20))
-   iconView.image = image
-   let iconContainerView: UIView = UIView(frame:
-                  CGRect(x: 20, y: 0, width: 30, height: 30))
-   iconContainerView.addSubview(iconView)
-   leftView = iconContainerView
-   leftViewMode = .always
+    func setIcon(_ image: UIImage) {
+        let iconView = UIImageView(frame:
+            CGRect(x: 10, y: 5, width: 20, height: 20))
+        iconView.image = image
+        let iconContainerView: UIView = UIView(frame:
+            CGRect(x: 20, y: 0, width: 30, height: 30))
+        iconContainerView.addSubview(iconView)
+        leftView = iconContainerView
+        leftViewMode = .always
+    }
 }
-}
+    
+
+
