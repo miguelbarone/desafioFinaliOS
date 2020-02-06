@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4864F699E4E42256EC3685A0 /* Pods_Cinetopzasso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8F0305F0431BDBBD57FEA5 /* Pods_Cinetopzasso.framework */; };
 		5A17D95D23EB3C4A00204AE6 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A17D95C23EB3C4A00204AE6 /* ForgotPasswordController.swift */; };
 		5A1F825D23E99C70003B453B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F825B23E99C70003B453B /* HomeViewController.swift */; };
 		5A1F825E23E99C70003B453B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F825C23E99C70003B453B /* HomeViewController.xib */; };
@@ -14,6 +15,10 @@
 		5A1F826223E99CC5003B453B /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F826123E99CC5003B453B /* BaseCoordinator.swift */; };
 		5A1F826423E99CD1003B453B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F826323E99CD1003B453B /* LoginCoordinator.swift */; };
 		5A28E49823EC447100A3C2E2 /* UserPreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A28E49723EC447100A3C2E2 /* UserPreferencesManager.swift */; };
+		5A28E49D23EC49CF00A3C2E2 /* RegisterMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A28E49B23EC49CF00A3C2E2 /* RegisterMovieViewController.swift */; };
+		5A28E49E23EC49CF00A3C2E2 /* RegisterMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A28E49C23EC49CF00A3C2E2 /* RegisterMovieViewController.xib */; };
+		5A28E4A023EC73BF00A3C2E2 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A28E49F23EC73BF00A3C2E2 /* MoviesService.swift */; };
+		5A28E4A223EC73CD00A3C2E2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A28E4A123EC73CD00A3C2E2 /* Movie.swift */; };
 		5A352F1323E9EE93001DC066 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1223E9EE93001DC066 /* LoginController.swift */; };
 		5A352F1723E9FA0C001DC066 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1623E9FA0C001DC066 /* User.swift */; };
 		5A352F1923E9FA19001DC066 /* SecurityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A352F1823E9FA19001DC066 /* SecurityService.swift */; };
@@ -30,6 +35,7 @@
 		5ACCC0D023E8B37D009B3B49 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0CE23E8B37D009B3B49 /* ForgotPasswordViewController.xib */; };
 		5ACCC0D523E8B39F009B3B49 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */; };
 		5ACCC0D623E8B39F009B3B49 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */; };
+		CCD39E794575AF495A46F870 /* Pods_CinetopzassoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E96A19B554EFA6388CED79 /* Pods_CinetopzassoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12E96A19B554EFA6388CED79 /* Pods_CinetopzassoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinetopzassoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		153F0993CF95C76800B9F93B /* Pods-CinetopzassoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinetopzassoTests.debug.xcconfig"; path = "Target Support Files/Pods-CinetopzassoTests/Pods-CinetopzassoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		22130E501AF685B9B1D05781 /* Pods-Cinetopzasso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinetopzasso.debug.xcconfig"; path = "Target Support Files/Pods-Cinetopzasso/Pods-Cinetopzasso.debug.xcconfig"; sourceTree = "<group>"; };
+		2A8F0305F0431BDBBD57FEA5 /* Pods_Cinetopzasso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cinetopzasso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A17D95C23EB3C4A00204AE6 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		5A1F825B23E99C70003B453B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A1F825C23E99C70003B453B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -50,6 +60,10 @@
 		5A1F826123E99CC5003B453B /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		5A1F826323E99CD1003B453B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		5A28E49723EC447100A3C2E2 /* UserPreferencesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesManager.swift; sourceTree = "<group>"; };
+		5A28E49B23EC49CF00A3C2E2 /* RegisterMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMovieViewController.swift; sourceTree = "<group>"; };
+		5A28E49C23EC49CF00A3C2E2 /* RegisterMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterMovieViewController.xib; sourceTree = "<group>"; };
+		5A28E49F23EC73BF00A3C2E2 /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		5A28E4A123EC73CD00A3C2E2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		5A352F1223E9EE93001DC066 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		5A352F1623E9FA0C001DC066 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5A352F1823E9FA19001DC066 /* SecurityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityService.swift; sourceTree = "<group>"; };
@@ -70,6 +84,8 @@
 		5ACCC0CE23E8B37D009B3B49 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		615220A28365B43A982D9852 /* Pods-CinetopzassoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinetopzassoTests.release.xcconfig"; path = "Target Support Files/Pods-CinetopzassoTests/Pods-CinetopzassoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA5AA4FFB2679B7C9B426884 /* Pods-Cinetopzasso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinetopzasso.release.xcconfig"; path = "Target Support Files/Pods-Cinetopzasso/Pods-Cinetopzasso.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4864F699E4E42256EC3685A0 /* Pods_Cinetopzasso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,17 +101,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD39E794575AF495A46F870 /* Pods_CinetopzassoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BF7893FA268E188AD41CD7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22130E501AF685B9B1D05781 /* Pods-Cinetopzasso.debug.xcconfig */,
+				AA5AA4FFB2679B7C9B426884 /* Pods-Cinetopzasso.release.xcconfig */,
+				153F0993CF95C76800B9F93B /* Pods-CinetopzassoTests.debug.xcconfig */,
+				615220A28365B43A982D9852 /* Pods-CinetopzassoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5A1F825923E99C4F003B453B /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				5A1F825B23E99C70003B453B /* HomeViewController.swift */,
 				5A1F825C23E99C70003B453B /* HomeViewController.xib */,
+				5A28E49923EC497E00A3C2E2 /* RegisterMovie */,
+				5A28E49A23EC49AB00A3C2E2 /* DetailsMovie */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -110,11 +142,28 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		5A28E49923EC497E00A3C2E2 /* RegisterMovie */ = {
+			isa = PBXGroup;
+			children = (
+				5A28E49B23EC49CF00A3C2E2 /* RegisterMovieViewController.swift */,
+				5A28E49C23EC49CF00A3C2E2 /* RegisterMovieViewController.xib */,
+			);
+			path = RegisterMovie;
+			sourceTree = "<group>";
+		};
+		5A28E49A23EC49AB00A3C2E2 /* DetailsMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailsMovie;
+			sourceTree = "<group>";
+		};
 		5A352F1423E9F9FB001DC066 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				5A352F1823E9FA19001DC066 /* SecurityService.swift */,
 				5A28E49723EC447100A3C2E2 /* UserPreferencesManager.swift */,
+				5A28E49F23EC73BF00A3C2E2 /* MoviesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -123,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				5A352F1623E9FA0C001DC066 /* User.swift */,
+				5A28E4A123EC73CD00A3C2E2 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +192,8 @@
 				5ACCC0A223E89E3D009B3B49 /* Cinetopzasso */,
 				5ACCC0B923E89E3F009B3B49 /* CinetopzassoTests */,
 				5ACCC0A123E89E3D009B3B49 /* Products */,
+				2BF7893FA268E188AD41CD7E /* Pods */,
+				B0FAAA6C4902F6D8FDE26185 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +271,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		B0FAAA6C4902F6D8FDE26185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A8F0305F0431BDBBD57FEA5 /* Pods_Cinetopzasso.framework */,
+				12E96A19B554EFA6388CED79 /* Pods_CinetopzassoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ACCC0BF23E89E3F009B3B49 /* Build configuration list for PBXNativeTarget "Cinetopzasso" */;
 			buildPhases = (
+				AEF36017A185153F1F1CA507 /* [CP] Check Pods Manifest.lock */,
 				5ACCC09C23E89E3D009B3B49 /* Sources */,
 				5ACCC09D23E89E3D009B3B49 /* Frameworks */,
 				5ACCC09E23E89E3D009B3B49 /* Resources */,
+				15DE5389E96BD7878B60CE1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ACCC0C223E89E3F009B3B49 /* Build configuration list for PBXNativeTarget "CinetopzassoTests" */;
 			buildPhases = (
+				64540B47ED53D5B8D6876191 /* [CP] Check Pods Manifest.lock */,
 				5ACCC0B223E89E3F009B3B49 /* Sources */,
 				5ACCC0B323E89E3F009B3B49 /* Frameworks */,
 				5ACCC0B423E89E3F009B3B49 /* Resources */,
@@ -302,6 +366,7 @@
 			files = (
 				5ACCC0D023E8B37D009B3B49 /* ForgotPasswordViewController.xib in Resources */,
 				5ACCC0D623E8B39F009B3B49 /* RegisterViewController.xib in Resources */,
+				5A28E49E23EC49CF00A3C2E2 /* RegisterMovieViewController.xib in Resources */,
 				5A352F2023E9FF35001DC066 /* SplashViewController.xib in Resources */,
 				5ACCC0AD23E89E3E009B3B49 /* Assets.xcassets in Resources */,
 				5ACCC0C923E89E8C009B3B49 /* LoginViewController.xib in Resources */,
@@ -318,14 +383,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15DE5389E96BD7878B60CE1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinetopzasso/Pods-Cinetopzasso-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinetopzasso/Pods-Cinetopzasso-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cinetopzasso/Pods-Cinetopzasso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64540B47ED53D5B8D6876191 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CinetopzassoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF36017A185153F1F1CA507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cinetopzasso-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5ACCC09C23E89E3D009B3B49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A28E4A223EC73CD00A3C2E2 /* Movie.swift in Sources */,
 				5ACCC0C823E89E8C009B3B49 /* LoginViewController.swift in Sources */,
 				5A1F826223E99CC5003B453B /* BaseCoordinator.swift in Sources */,
 				5A1F826423E99CD1003B453B /* LoginCoordinator.swift in Sources */,
+				5A28E49D23EC49CF00A3C2E2 /* RegisterMovieViewController.swift in Sources */,
 				5A28E49823EC447100A3C2E2 /* UserPreferencesManager.swift in Sources */,
 				5ACCC0CF23E8B37D009B3B49 /* ForgotPasswordViewController.swift in Sources */,
 				5ACCC0A823E89E3D009B3B49 /* ViewController.swift in Sources */,
@@ -336,6 +467,7 @@
 				5A352F1B23E9FD4C001DC066 /* HomeCoordinator.swift in Sources */,
 				5A17D95D23EB3C4A00204AE6 /* ForgotPasswordController.swift in Sources */,
 				5A1F825D23E99C70003B453B /* HomeViewController.swift in Sources */,
+				5A28E4A023EC73BF00A3C2E2 /* MoviesService.swift in Sources */,
 				5A352F1923E9FA19001DC066 /* SecurityService.swift in Sources */,
 				5A352F1323E9EE93001DC066 /* LoginController.swift in Sources */,
 				5A352F1723E9FA0C001DC066 /* User.swift in Sources */,
@@ -477,6 +609,7 @@
 		};
 		5ACCC0C023E89E3F009B3B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22130E501AF685B9B1D05781 /* Pods-Cinetopzasso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +628,7 @@
 		};
 		5ACCC0C123E89E3F009B3B49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA5AA4FFB2679B7C9B426884 /* Pods-Cinetopzasso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +647,7 @@
 		};
 		5ACCC0C323E89E3F009B3B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153F0993CF95C76800B9F93B /* Pods-CinetopzassoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +669,7 @@
 		};
 		5ACCC0C423E89E3F009B3B49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615220A28365B43A982D9852 /* Pods-CinetopzassoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
