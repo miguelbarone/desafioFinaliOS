@@ -80,11 +80,23 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
-        guard let email = textFieldEmail.text, !email.isEmpty, let password = textFieldPassword.text, !password.isEmpty else {
+        guard let email = textFieldEmail.text, email.contains("@"), let password = textFieldPassword.text, password.contains("12345") else {
+            
+            let alert = UIAlertController(title: "Opa, algo deu errado!", message: "Preencha todos os campos, ou verifique se inseriu os dados corretos.", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+            self.present(alert, animated: true)
+            
             return
         }
         
         controller.login(email: email, password: password)
+    }
+    
+    @IBAction func forgotPasswordButton(_ sender: Any) {
+        
+        controller.forgotPassword()
     }
     
     @objc func closeKeyboard() {

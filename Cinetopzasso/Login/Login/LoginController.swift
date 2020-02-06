@@ -38,13 +38,11 @@ class LoginController: LoginControllerContract {
     func login(email: String, password: String) {
         securityService.login(email: email, password: password)
         self.viewController?.viewDelegate?.userDidLoginWithSuccess()
+        
     }
     
     func forgotPassword() {
-        guard let vc = self.viewController else { return }
-        
-
-        
+        goToForgotPassword()
         
     }
     
@@ -53,6 +51,15 @@ class LoginController: LoginControllerContract {
         
         let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
         viewController.modalPresentationStyle = .overFullScreen
+        
+        vc.present(viewController, animated: true, completion: nil)
+    }
+    
+    private func goToForgotPassword() {
+        guard let vc = self.viewController else { return }
+        
+        let viewController = ForgotPasswordViewController(nibName: "ForgotPasswordViewController", bundle: nil)
+        viewController.modalPresentationStyle = .popover
         
         vc.present(viewController, animated: true, completion: nil)
     }

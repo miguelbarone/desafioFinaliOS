@@ -66,6 +66,9 @@
                     <state key="normal" title="Esqueceu sua senha?">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="forgotPasswordButton:" destination="-1" eventType="touchUpInside" id="5np-Pt-SS1"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jK-56-Os5">
                     <rect key="frame" x="55" y="300" width="86" height="28"/>

@@ -11,40 +11,52 @@ import UIKit
 class AppCoordinator: BaseCoordinator {
     
     var window: UIWindow
-    var initialViewController: UIViewController
+    var initialViewController: SplashViewController
     var loginCoordinator: LoginCoordinator?
     var homeCoordinator: HomeCoordinator?
     
     init() {
-        self.window = UIWindow()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         self.initialViewController = SplashViewController.instantiate()
-        
-        self.window.rootViewController = initialViewController
-        self.window.makeKeyAndVisible()
     }
     
     func start() {
-        
-        showLogin()
+        self.initialViewController.delegate = self
+        self.window.rootViewController = initialViewController
+        self.window.makeKeyAndVisible()
     }
     
     func finish() {
         
     }
     
-        func showLogin() {
-            loginCoordinator = loginCoordinator ?? LoginCoordinator(delegate: self, securityService: SecurityService())
-            loginCoordinator?.start()
-            
-            self.window.rootViewController = loginCoordinator?.rootViewController!
-        }
+    func showLogin() {
+        loginCoordinator = loginCoordinator ?? LoginCoordinator(delegate: self, securityService: SecurityService())
+        loginCoordinator?.start()
         
-        func showHome() {
-            homeCoordinator = homeCoordinator ?? HomeCoordinator(delegate: self)
-            homeCoordinator?.start()
-            self.window.rootViewController = homeCoordinator?.rootViewController
+        self.window.rootViewController = self.loginCoordinator?.rootViewController!
+        
+    }
+    
+    func showHome() {
+        homeCoordinator = homeCoordinator ?? HomeCoordinator(delegate: self)
+        homeCoordinator?.start()
+        self.window.rootViewController = homeCoordinator?.rootViewController
+        
+    }
+    }
+
+extension AppCoordinator: SplashViewDelegate {
+    func didFinishLoading() {
+        let securityService: SecurityService = SecurityService()
+        
+        if securityService.currentUser != nil {
+            showHome()
+        } else {
+            showLogin()
         }
     }
+}
 
     extension AppCoordinator: LoginCoordinatorDelegate {
         func didLoginWithSuccess() {

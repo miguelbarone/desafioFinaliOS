@@ -9,22 +9,57 @@
 import UIKit
 
 class ForgotPasswordViewController: UIViewController {
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
 
+    var controller: ForgotPasswordControllerContract!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.textFieldSetup()
+        
+        controller = controller ?? ForgotPasswordController(delegate: self)
+        
+        setGestures()
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func textFieldSetup() {
+        emailTextField.layer.cornerRadius = 18
+        emailTextField.layer.masksToBounds = true
     }
-    */
-
+    private func setGestures() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
+        self.view.addGestureRecognizer(gesture)
+    }
+    
+    @objc func closeKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+     private func dissmissModal() {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        @objc private func sendRecoverEmail(){
+            guard let email = emailTextField.text, !email.isEmpty else { return }
+            self.controller.sendRecoverEmail(email)
+        }
+    
+    @IBAction func sendButton(_ sender: Any) {
+        sendRecoverEmail()
+    }
 }
+
+    extension ForgotPasswordViewController: ForgotPasswordViewDelegate {
+        func finish() {
+                self.dissmissModal()
+        }
+        
+        func alert(error: String) {
+            print(error)
+        }
+    }
+
+

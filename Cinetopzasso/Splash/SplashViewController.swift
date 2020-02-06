@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol SplashViewDelegate {
+    func didFinishLoading()
+}
+
 class SplashViewController: UIViewController {
-    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var logoLabel: UILabel!
+    
+    var delegate: SplashViewDelegate?
     
     static func instantiate() -> SplashViewController {
-        return SplashViewController(nibName: nil, bundle: nil)
+        return SplashViewController(nibName: "SplashViewController", bundle: nil)
     }
     
     override func viewDidLoad() {
@@ -20,8 +26,12 @@ class SplashViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 3.0) {
-            self.logoImageView.alpha = 1.0
+        UIView.animate(withDuration: 3.0, animations: {
+            self.logoLabel.alpha = 1.0
+        }) { _ in
+            self.delegate?.didFinishLoading()
         }
+        
+        
     }
 }
