@@ -16,13 +16,15 @@ protocol HomeCoordinatorDelegate {
 class HomeCoordinator: BaseCoordinator {
     var rootViewController: UINavigationController?
     let delegate: HomeCoordinatorDelegate
+    var controller: HomeController
     
     init(delegate: HomeCoordinatorDelegate) {
         self.delegate = delegate
+        controller = HomeController(delegate: nil, service: MoviesService())
     }
     
     func start() {
-        let view = HomeViewController()
+        let view = HomeViewController(controller: controller)
         view.delegate = self
         let navigation = UINavigationController(rootViewController: view)
         navigation.isNavigationBarHidden = true

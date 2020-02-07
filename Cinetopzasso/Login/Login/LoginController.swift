@@ -32,7 +32,6 @@ class LoginController: LoginControllerContract {
     func validateLogin() {
         guard securityService.currentUser != nil else { return }
         
-        goToHomeScreen()
     }
     
     func login(email: String, password: String) {
@@ -46,14 +45,6 @@ class LoginController: LoginControllerContract {
         
     }
     
-    private func goToHomeScreen() {
-        guard let vc = self.viewController else { return }
-        
-        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        viewController.modalPresentationStyle = .overFullScreen
-        
-        vc.present(viewController, animated: true, completion: nil)
-    }
     
     private func goToForgotPassword() {
         guard let vc = self.viewController else { return }

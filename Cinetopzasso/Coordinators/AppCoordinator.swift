@@ -14,6 +14,7 @@ class AppCoordinator: BaseCoordinator {
     var initialViewController: SplashViewController
     var loginCoordinator: LoginCoordinator?
     var homeCoordinator: HomeCoordinator?
+    var controller: HomeController?
     
     init() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -24,6 +25,10 @@ class AppCoordinator: BaseCoordinator {
         self.initialViewController.delegate = self
         self.window.rootViewController = initialViewController
         self.window.makeKeyAndVisible()
+
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window.rootViewController = UINavigationController(rootViewController: TabBarViewController(controller: controller ?? HomeController(delegate: nil, service: nil)))
+//        window.makeKeyAndVisible()
     }
     
     func finish() {

@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Cinetopzasso" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="sgq-3K-LlO" id="3Cn-4R-K78"/>
                 <outlet property="usernameLabel" destination="W5i-Qs-HSZ" id="Xi5-lb-lYe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

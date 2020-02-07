@@ -7,6 +7,7 @@ target 'Cinetopzasso' do
 
   # Pods for Cinetopzasso
   pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Kingfisher', '~> 5.0'
 
   target 'CinetopzassoTests' do
     inherit! :search_paths
