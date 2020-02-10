@@ -17,6 +17,7 @@ protocol LoginControllerContract {
     func validateLogin()
     func login(email: String, password: String)
     func forgotPassword()
+    func register()
 }
 
 
@@ -45,11 +46,24 @@ class LoginController: LoginControllerContract {
         
     }
     
+    func register() {
+        goToRegisterScreen()
+    }
+    
     
     private func goToForgotPassword() {
         guard let vc = self.viewController else { return }
         
         let viewController = ForgotPasswordViewController(nibName: "ForgotPasswordViewController", bundle: nil)
+        viewController.modalPresentationStyle = .popover
+        
+        vc.present(viewController, animated: true, completion: nil)
+    }
+    
+    private func goToRegisterScreen() {
+        guard let vc = self.viewController else { return }
+        
+        let viewController = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
         viewController.modalPresentationStyle = .popover
         
         vc.present(viewController, animated: true, completion: nil)

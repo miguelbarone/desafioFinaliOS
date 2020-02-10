@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,29 +21,33 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTw-gW-ZdR">
-                    <rect key="frame" x="20" y="10" width="18" height="22"/>
+                    <rect key="frame" x="7" y="7" width="25" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="UJ4-Gx-kG2"/>
+                        <constraint firstAttribute="height" constant="23" id="fv6-Fe-X6D"/>
+                    </constraints>
                     <color key="tintColor" red="1" green="0.36862745099999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" image="arrowtriangle.left.fill" catalog="system"/>
+                    <state key="normal" backgroundImage="logout2"/>
                     <connections>
                         <action selector="logout:" destination="-1" eventType="touchUpInside" id="tcy-4U-uI1"/>
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-3K-LlO">
-                    <rect key="frame" x="0.0" y="67" width="375" height="600"/>
+                    <rect key="frame" x="0.0" y="73.5" width="375" height="593.5"/>
                     <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="separatorColor" red="1" green="0.36862745099999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="req-WX-qxs">
-                    <rect key="frame" x="0.0" y="31" width="375" height="36"/>
+                    <rect key="frame" x="0.0" y="31" width="375" height="42.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5i-Qs-HSZ">
-                            <rect key="frame" x="0.0" y="7.5" width="375" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="0.0" y="7.5" width="375" height="27.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="20"/>
+                            <color key="textColor" name="LARANJASSO"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstItem="W5i-Qs-HSZ" firstAttribute="top" secondItem="req-WX-qxs" secondAttribute="top" constant="7.5" id="3AB-Ty-3p1"/>
                         <constraint firstItem="W5i-Qs-HSZ" firstAttribute="centerX" secondItem="req-WX-qxs" secondAttribute="centerX" id="Job-Fr-ABs"/>
@@ -51,15 +56,15 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="req-WX-qxs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Ya-Bs-WU8"/>
-                <constraint firstItem="GTw-gW-ZdR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="34X-Pu-org"/>
+                <constraint firstItem="GTw-gW-ZdR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="7" id="34X-Pu-org"/>
                 <constraint firstAttribute="bottom" secondItem="sgq-3K-LlO" secondAttribute="bottom" id="DD4-Ri-5LT"/>
                 <constraint firstItem="sgq-3K-LlO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L3g-0c-9CL"/>
                 <constraint firstItem="req-WX-qxs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="31" id="Pvw-Mi-hfH"/>
                 <constraint firstItem="req-WX-qxs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="deg-kh-aO6"/>
-                <constraint firstItem="GTw-gW-ZdR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="kcL-43-bZZ"/>
+                <constraint firstItem="GTw-gW-ZdR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="7" id="kcL-43-bZZ"/>
                 <constraint firstItem="sgq-3K-LlO" firstAttribute="top" secondItem="req-WX-qxs" secondAttribute="bottom" id="kwh-wR-4BU"/>
                 <constraint firstItem="sgq-3K-LlO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pY5-8H-vGU"/>
             </constraints>
@@ -68,6 +73,9 @@
         </view>
     </objects>
     <resources>
-        <image name="arrowtriangle.left.fill" catalog="system" width="64" height="56"/>
+        <image name="logout2" width="512" height="512"/>
+        <namedColor name="LARANJASSO">
+            <color red="1" green="0.36899998784065247" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

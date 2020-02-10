@@ -1,13 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Cinetopzasso" customModuleProvider="target">
             <connections>
+                <outlet property="againTextField" destination="rPz-H2-qoN" id="SVf-XB-0AA"/>
+                <outlet property="emailTextField" destination="52Y-Kv-JeO" id="Op7-qu-cjg"/>
+                <outlet property="finishButton" destination="jdY-W3-ZwZ" id="aTi-ro-L1m"/>
+                <outlet property="nameTextField" destination="IOl-0S-aAp" id="hbH-dQ-e4T"/>
+                <outlet property="passwordTextField" destination="Uku-1a-RCi" id="DHX-0G-yF4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +22,81 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUNTE-SE A NÓS, PEQUENO GAFANHOTO!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMB-Jc-W5B">
+                    <rect key="frame" x="4" y="30" width="368" height="52"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
+                    <color key="textColor" name="LARANJASSO"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preencha os campos abaixo, e CONCLUA O PACTO CONOSCO!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgV-ET-Aax">
+                    <rect key="frame" x="57" y="132" width="262" height="90.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sua senha nada haver" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uku-1a-RCi">
+                    <rect key="frame" x="57" y="380.5" width="262" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seu e-mail do Orkut" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52Y-Kv-JeO">
+                    <rect key="frame" x="57" y="311.5" width="262" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repete essa senha aí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rPz-H2-qoN">
+                    <rect key="frame" x="57" y="449.5" width="262" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdY-W3-ZwZ">
+                    <rect key="frame" x="122" y="508.5" width="131" height="38"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="19"/>
+                    <state key="normal" title="Vender a alma">
+                        <color key="titleColor" red="1" green="0.2350596269251595" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="finishRegister:" destination="-1" eventType="touchUpInside" id="yXI-9A-fTi"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seu falso nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IOl-0S-aAp">
+                    <rect key="frame" x="57" y="242.5" width="262" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Uku-1a-RCi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="1km-Sn-HzY"/>
+                <constraint firstItem="jgV-ET-Aax" firstAttribute="top" secondItem="UMB-Jc-W5B" secondAttribute="bottom" constant="50" id="2dI-ot-50D"/>
+                <constraint firstItem="UMB-Jc-W5B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="6tn-SR-rzq"/>
+                <constraint firstItem="Uku-1a-RCi" firstAttribute="top" secondItem="52Y-Kv-JeO" secondAttribute="bottom" constant="35" id="9Xd-YP-zdH"/>
+                <constraint firstItem="rPz-H2-qoN" firstAttribute="top" secondItem="Uku-1a-RCi" secondAttribute="bottom" constant="35" id="AYs-y2-hq4"/>
+                <constraint firstItem="jdY-W3-ZwZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="122" id="Csg-eh-h5P"/>
+                <constraint firstItem="52Y-Kv-JeO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="DcL-6t-otv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IOl-0S-aAp" secondAttribute="trailing" constant="56" id="IvL-Fb-GCU"/>
+                <constraint firstItem="jdY-W3-ZwZ" firstAttribute="top" secondItem="rPz-H2-qoN" secondAttribute="bottom" constant="25" id="OPa-KU-YWb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rPz-H2-qoN" secondAttribute="trailing" constant="56" id="RIh-6R-xm9"/>
+                <constraint firstItem="UMB-Jc-W5B" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Rbi-Pd-KVP"/>
+                <constraint firstItem="rPz-H2-qoN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="Rbm-1h-mZ5"/>
+                <constraint firstItem="IOl-0S-aAp" firstAttribute="top" secondItem="jgV-ET-Aax" secondAttribute="bottom" constant="20" id="U1z-Pw-kxQ"/>
+                <constraint firstItem="jgV-ET-Aax" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="ctk-O4-Bsg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="52Y-Kv-JeO" secondAttribute="trailing" constant="56" id="dZ4-fC-jwX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jdY-W3-ZwZ" secondAttribute="trailing" constant="122" id="jnG-rl-vae"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UMB-Jc-W5B" secondAttribute="trailing" constant="3" id="k62-Vx-rxj"/>
+                <constraint firstItem="52Y-Kv-JeO" firstAttribute="top" secondItem="IOl-0S-aAp" secondAttribute="bottom" constant="35" id="kDu-Br-wjZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jgV-ET-Aax" secondAttribute="trailing" constant="56" id="lfb-sj-ESM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uku-1a-RCi" secondAttribute="trailing" constant="56" id="sB1-og-KdX"/>
+                <constraint firstItem="IOl-0S-aAp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="zil-vR-6Fr"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.43478260869566"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="LARANJASSO">
+            <color red="1" green="0.36899998784065247" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

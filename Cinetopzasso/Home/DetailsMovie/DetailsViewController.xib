@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,7 +32,7 @@
                         <constraint firstAttribute="width" constant="240" id="UcK-be-54j"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVENGERS: CARALHO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64c-Pk-2VZ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SASKE NARUTO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64c-Pk-2VZ">
                     <rect key="frame" x="67" y="287" width="240" height="27.5"/>
                     <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="20"/>
                     <color key="textColor" red="1" green="0.36862745099999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,18 +63,26 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaN-5b-AoM">
-                    <rect key="frame" x="67" y="445" width="240" height="488"/>
-                    <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                    <rect key="frame" x="67" y="452.5" width="240" height="488"/>
+                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
                     <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7e-vM-toj">
-                    <rect key="frame" x="67" y="416" width="240" height="23.5"/>
+                    <rect key="frame" x="67" y="423.5" width="240" height="23.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                     <color key="textColor" red="1" green="0.36862745099999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8W-Z9-Xnx">
+                    <rect key="frame" x="8" y="5" width="20" height="22"/>
+                    <color key="tintColor" name="LARANJASSO"/>
+                    <state key="normal" image="arrow.uturn.left" catalog="system"/>
+                    <connections>
+                        <action selector="return:" destination="-1" eventType="touchUpInside" id="XxH-65-s3n"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.1948564404" green="0.1948564404" blue="0.1948564404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -86,6 +95,7 @@
                 <constraint firstItem="WaN-5b-AoM" firstAttribute="top" secondItem="D7e-vM-toj" secondAttribute="bottom" constant="5.5" id="NOf-Qs-7AU"/>
                 <constraint firstItem="D7e-vM-toj" firstAttribute="trailing" secondItem="vaW-Q8-aNS" secondAttribute="trailing" id="NRp-on-2jz"/>
                 <constraint firstItem="mmj-L6-mBm" firstAttribute="leading" secondItem="Jcj-7K-Pid" secondAttribute="leading" id="PcY-sU-GKT"/>
+                <constraint firstItem="x8W-Z9-Xnx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="Yqa-ll-ozS"/>
                 <constraint firstItem="vaW-Q8-aNS" firstAttribute="trailing" secondItem="mmj-L6-mBm" secondAttribute="trailing" id="Z7X-m5-pnK"/>
                 <constraint firstItem="Jcj-7K-Pid" firstAttribute="leading" secondItem="64c-Pk-2VZ" secondAttribute="leading" id="ZWx-GT-8B5"/>
                 <constraint firstItem="WaN-5b-AoM" firstAttribute="leading" secondItem="D7e-vM-toj" secondAttribute="leading" id="a9j-m5-x94"/>
@@ -93,9 +103,10 @@
                 <constraint firstItem="WaN-5b-AoM" firstAttribute="leading" secondItem="vaW-Q8-aNS" secondAttribute="leading" id="eKQ-Ye-BHH"/>
                 <constraint firstItem="mmj-L6-mBm" firstAttribute="top" secondItem="qip-Tw-Nbz" secondAttribute="bottom" constant="14.5" id="enz-cR-nWo"/>
                 <constraint firstItem="LYE-fB-eSi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="gm0-Lq-aNu"/>
+                <constraint firstItem="x8W-Z9-Xnx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="h59-3h-oeQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LYE-fB-eSi" secondAttribute="trailing" constant="68" id="iu3-uT-yoN"/>
                 <constraint firstItem="64c-Pk-2VZ" firstAttribute="leading" secondItem="LYE-fB-eSi" secondAttribute="leading" id="kfb-BF-iPx"/>
-                <constraint firstItem="D7e-vM-toj" firstAttribute="top" secondItem="vaW-Q8-aNS" secondAttribute="bottom" constant="12.5" id="lCm-cO-rKX"/>
+                <constraint firstItem="D7e-vM-toj" firstAttribute="top" secondItem="vaW-Q8-aNS" secondAttribute="bottom" constant="20" id="lCm-cO-rKX"/>
                 <constraint firstItem="64c-Pk-2VZ" firstAttribute="trailing" secondItem="LYE-fB-eSi" secondAttribute="trailing" id="lcH-dA-UpK"/>
                 <constraint firstItem="qip-Tw-Nbz" firstAttribute="top" secondItem="64c-Pk-2VZ" secondAttribute="bottom" constant="1.5" id="oPx-JG-oQo"/>
                 <constraint firstItem="64c-Pk-2VZ" firstAttribute="top" secondItem="LYE-fB-eSi" secondAttribute="bottom" constant="8" id="oaJ-sJ-rzu"/>
@@ -106,4 +117,10 @@
             <point key="canvasLocation" x="138.40000000000001" y="116.49175412293854"/>
         </view>
     </objects>
+    <resources>
+        <image name="arrow.uturn.left" catalog="system" width="64" height="56"/>
+        <namedColor name="LARANJASSO">
+            <color red="1" green="0.36899998784065247" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

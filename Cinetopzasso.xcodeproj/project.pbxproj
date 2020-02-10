@@ -40,8 +40,9 @@
 		5ACCC0C923E89E8C009B3B49 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0C723E89E8C009B3B49 /* LoginViewController.xib */; };
 		5ACCC0CF23E8B37D009B3B49 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0CD23E8B37D009B3B49 /* ForgotPasswordViewController.swift */; };
 		5ACCC0D023E8B37D009B3B49 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0CE23E8B37D009B3B49 /* ForgotPasswordViewController.xib */; };
-		5ACCC0D523E8B39F009B3B49 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */; };
-		5ACCC0D623E8B39F009B3B49 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */; };
+		856805C723EFB637004C7983 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856805C523EFB637004C7983 /* RegisterViewController.swift */; };
+		856805C823EFB637004C7983 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856805C623EFB637004C7983 /* RegisterViewController.xib */; };
+		858A173923EFBB1A009321C1 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A173823EFBB1A009321C1 /* RegisterController.swift */; };
 		CCD39E794575AF495A46F870 /* Pods_CinetopzassoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E96A19B554EFA6388CED79 /* Pods_CinetopzassoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,9 +97,10 @@
 		5ACCC0C723E89E8C009B3B49 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5ACCC0CD23E8B37D009B3B49 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5ACCC0CE23E8B37D009B3B49 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
-		5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		615220A28365B43A982D9852 /* Pods-CinetopzassoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinetopzassoTests.release.xcconfig"; path = "Target Support Files/Pods-CinetopzassoTests/Pods-CinetopzassoTests.release.xcconfig"; sourceTree = "<group>"; };
+		856805C523EFB637004C7983 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		856805C623EFB637004C7983 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		858A173823EFBB1A009321C1 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		AA5AA4FFB2679B7C9B426884 /* Pods-Cinetopzasso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinetopzasso.release.xcconfig"; path = "Target Support Files/Pods-Cinetopzasso/Pods-Cinetopzasso.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,8 +293,9 @@
 		5ACCC0CB23E8B33B009B3B49 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				5ACCC0D323E8B39F009B3B49 /* RegisterViewController.swift */,
-				5ACCC0D423E8B39F009B3B49 /* RegisterViewController.xib */,
+				856805C523EFB637004C7983 /* RegisterViewController.swift */,
+				856805C623EFB637004C7983 /* RegisterViewController.xib */,
+				858A173823EFBB1A009321C1 /* RegisterController.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -401,11 +404,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ACCC0D023E8B37D009B3B49 /* ForgotPasswordViewController.xib in Resources */,
-				5ACCC0D623E8B39F009B3B49 /* RegisterViewController.xib in Resources */,
 				5A28E49E23EC49CF00A3C2E2 /* RegisterMovieViewController.xib in Resources */,
 				5A352F2023E9FF35001DC066 /* SplashViewController.xib in Resources */,
 				5ACCC0AD23E89E3E009B3B49 /* Assets.xcassets in Resources */,
 				5ACCC0C923E89E8C009B3B49 /* LoginViewController.xib in Resources */,
+				856805C823EFB637004C7983 /* RegisterViewController.xib in Resources */,
 				5A22C0AC23ED96870065A458 /* MoviesTableViewCell.xib in Resources */,
 				5A1F825E23E99C70003B453B /* HomeViewController.xib in Resources */,
 				5A9E961B23EDFF52002BECE6 /* DetailsViewController.xib in Resources */,
@@ -493,6 +496,7 @@
 				5A28E4A223EC73CD00A3C2E2 /* Movie.swift in Sources */,
 				5A9E961A23EDFF52002BECE6 /* DetailsViewController.swift in Sources */,
 				5ACCC0C823E89E8C009B3B49 /* LoginViewController.swift in Sources */,
+				856805C723EFB637004C7983 /* RegisterViewController.swift in Sources */,
 				5A22C0B123EDD5730065A458 /* TabBarViewController.swift in Sources */,
 				5A9E961D23EDFF5E002BECE6 /* DetailsController.swift in Sources */,
 				5A22C0AE23ED9E400065A458 /* HomeController.swift in Sources */,
@@ -504,7 +508,7 @@
 				5ACCC0CF23E8B37D009B3B49 /* ForgotPasswordViewController.swift in Sources */,
 				5ACCC0A823E89E3D009B3B49 /* ViewController.swift in Sources */,
 				5A352F1F23E9FF35001DC066 /* SplashViewController.swift in Sources */,
-				5ACCC0D523E8B39F009B3B49 /* RegisterViewController.swift in Sources */,
+				858A173923EFBB1A009321C1 /* RegisterController.swift in Sources */,
 				5A1F826023E99CB8003B453B /* AppCoordinator.swift in Sources */,
 				5ACCC0A423E89E3D009B3B49 /* AppDelegate.swift in Sources */,
 				5A352F1B23E9FD4C001DC066 /* HomeCoordinator.swift in Sources */,

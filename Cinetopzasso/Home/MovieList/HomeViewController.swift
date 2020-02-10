@@ -35,8 +35,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.controller?.delegate = self
-        self.tableView.dataSource = self
+        self.controller?.set(delegate: self)
         securityService = SecurityService()
         userPreferences = UserPreferencesManager()
         setup()
@@ -49,6 +48,8 @@ class HomeViewController: UIViewController {
     func setup() {
         tableView.register(MoviesTableViewCell.NIB, forCellReuseIdentifier: MoviesTableViewCell.IDENTIFIER)
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     @IBAction func logout(_ sender: Any) {
@@ -71,6 +72,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        controller?.showDetails(index: indexPath)
     }
 }
 

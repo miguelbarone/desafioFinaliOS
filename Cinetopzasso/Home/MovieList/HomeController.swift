@@ -14,6 +14,10 @@ protocol MoviesViewModelContract {
     func set(delegate: MoviesViewModelViewDelegate?)
 }
 
+protocol HomeControllerDelegate: class {
+    func didSelecetItem(_ movies: Movie)
+}
+
 protocol MoviesViewModelViewDelegate: class {
     
     func didUpdateMoviesList()
@@ -27,13 +31,11 @@ class HomeController: MoviesViewModelContract {
         return moviesList
     }
 
-//  MARK: - Variables
     var service: MoviesService?
     
-//  MARK: - Delegates
     weak var delegate: MoviesViewModelViewDelegate?
+    weak var delegateHome: HomeControllerDelegate?
     
-//  MARK: - Methods
     init(delegate: MoviesViewModelViewDelegate?, service: MoviesService?) {
         self.delegate = delegate
         self.service = service ?? MoviesService()
@@ -41,6 +43,10 @@ class HomeController: MoviesViewModelContract {
     
     func set(delegate: MoviesViewModelViewDelegate?) {
         self.delegate = delegate
+    }
+    
+    func set(delegateHome: HomeControllerDelegate?) {
+        self.delegateHome = delegateHome
     }
     
     func fetchMovies() {
@@ -54,5 +60,11 @@ class HomeController: MoviesViewModelContract {
             self.moviesList.append(contentsOf: list)
             self.delegate?.didUpdateMoviesList()
         })
+    }
+    
+    func showDetails(index: IndexPath) {
+        
+        let movie = movies[index.row]
+        delegateHome?.didSelecetItem(movie)
     }
 }

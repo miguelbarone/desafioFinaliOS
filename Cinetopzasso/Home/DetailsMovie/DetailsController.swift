@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class DetailsController {
+    var movies: Movie
+    
+    init(movies: Movie) {
+        self.movies = movies
+    }
+}

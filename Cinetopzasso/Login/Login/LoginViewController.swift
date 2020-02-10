@@ -99,6 +99,10 @@ class LoginViewController: UIViewController {
         controller.forgotPassword()
     }
     
+    @IBAction func registerButton(_ sender: Any) {
+        controller.register()
+    }
+    
     @objc func closeKeyboard() {
         self.view.endEditing(true)
     }

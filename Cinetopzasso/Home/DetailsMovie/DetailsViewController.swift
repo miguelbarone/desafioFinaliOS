@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailsViewController: UIViewController {
     @IBOutlet weak var movieImage: UIImageView!
@@ -17,21 +18,52 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var movieCast: UILabel!
     @IBOutlet weak var moviePlot: UILabel!
     
+    private var downloadTask: DownloadTask?
+    
+    var controller: DetailsController?
+    
+    init(controller: DetailsController?, nibName: String? = nil) {
+        super.init(nibName: nibName, bundle: nil)
+        self.controller = controller
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setup()
+        
+        downloadTask?.cancel()
 
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func `return`(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+        dismiss(animated: true, completion: nil)
     }
-    */
+    
+    func setup() {
+        movieTitle.text = controller?.movies.titulo
+        movieYear.text = controller?.movies.ano
+        
+        if let url = URL(string: (controller?.movies.imagem)!) {
+            self.movieImage.kf.indicatorType = .activity
+            self.downloadTask = self.movieImage.kf.setImage(with: url) { (result) in
+                self.downloadTask = nil
+            }
+        } else {
+            downloadTask = nil
+            movieImage.image = nil
+        }
+        
+        movieDuration.text = controller?.movies.duracao
+        movieCast.text = controller?.movies.elenco
+        moviePlot.text = controller?.movies.sinopse
+        movieDirector.text = controller?.movies.diretor
+    }
 
 }
